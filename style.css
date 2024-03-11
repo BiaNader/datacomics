@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(161,43,43,1) 30%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header, nav, main, footer{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+header{
+    flex: 1 1 100vw;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: aquamarine;
+}
+
+h1{
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin: 30px;
+    color:azure;
+    font-size: 64px;
+    font-family: Creepster;
+}
+
+nav{
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 200px;
+    padding: 10px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.lista{
+    padding: 10px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1, .card2{
+    margin-bottom: 16px;
+
+}
+
+
+.cardquad, .cardtrend, .cardleit, .cardfinal{
+    /* flex: 1 1 calc(33.33% - 16px); */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    padding: 30px;
+    width: 300px;
+    height: 150px;
+    color: azure;
+    font-size: 32px;
+    text-align: center;
+    font-family: creepster;
+}
+
+.cardquad{
+    background-image: url(Group\ 1.svg);
+}
+
+.cardfinal{
+    background-image: url(Group\ 2.svg);
+}
+
+.cardtrend{
+    background-image: url(Group\ 3.svg);
+}
+
+
+.cardleit{
+    background-image: url(Group\ 4.svg);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+footer{
+    flex: 1;
+    color: azure;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    display: none;
+    bottom: 0;
+    position: absolute;
+}
